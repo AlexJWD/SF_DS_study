@@ -15,8 +15,8 @@ def higher_lower_predict(number: int = 1) -> int:
         int: Число попыток
     """
     count = 0
-    predict_number = 50
-    min_level , max_level = 1 , 100 # границы коридора возможных значений 
+    min_level , max_level = 1 , 100 # границы коридора возможных значений
+    predict_number = (max_level + min_level)//2
     
     while True:
         count += 1
@@ -49,7 +49,7 @@ def score_game(higher_lower_predict) -> int:
         count_ls.append(higher_lower_predict(number))
 
     score = int(np.mean(count_ls))
-    print(f"Ваш алгоритм угадывает число в среднем за:{score} попыток")
+    print(f"Ваш алгоритм угадывает число в среднем за: {score} попыток")
     return score
 
 

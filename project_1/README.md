@@ -38,17 +38,19 @@
 :arrow_up:[к оглавлению](https://github.com/AlexJWD/SF_DS_study/tree/main/project_1#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Этапы работы над проектом  
-....
+- разработка функции higher_lower_predict().
+- разработка функции score_game().
 
 :arrow_up:[к оглавлению](https://github.com/AlexJWD/SF_DS_study/tree/main/project_1#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Результаты:  
-....
+Алгоритм угадывает случайно заданное число в диапазоне 1-100 в среднем за 
+5 попыток на 1000 повторений
 
 :arrow_up:[к оглавлению](https://github.com/AlexJWD/SF_DS_study/tree/main/project_1#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Выводы:  
-....
+Алгоритм примерно в 20 раз более эффективный, чем алгоритм угадывания числа случайным образом
 
 :arrow_up:[к оглавлению](https://github.com/AlexJWD/SF_DS_study/tree/main/project_1#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
