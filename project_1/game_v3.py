@@ -5,7 +5,7 @@
 import numpy as np
 
 
-def higher_lower_predict(number: int = 1) -> int:
+def higher_lower_predict(number: int=1) -> int:
     """Угадываем число, используя проверку "больше-меньше" и сужая интервал поиска пополам
 
     Args:
@@ -15,8 +15,8 @@ def higher_lower_predict(number: int = 1) -> int:
         int: Число попыток
     """
     count = 0
-    min_level , max_level = 1 , 100 # границы коридора возможных значений
-    predict_number = (max_level + min_level)//2
+    min_level, max_level = 1, 100 # границы коридора возможных значений
+    predict_number = (max_level + min_level) // 2
     
     while True:
         count += 1
@@ -24,10 +24,10 @@ def higher_lower_predict(number: int = 1) -> int:
             break  # выход из цикла если угадали
         elif number > predict_number:
             min_level = predict_number
-            predict_number = (max_level + min_level)//2 + (max_level + min_level)%2 # округляем в большую сторону
+            predict_number = (max_level + min_level) // 2 + (max_level + min_level) % 2 # округляем в большую сторону
         else:
             max_level = predict_number
-            predict_number = (max_level + min_level)//2 # округляем в меньшую сторону
+            predict_number = (max_level + min_level) // 2 # округляем в меньшую сторону
              
     return count
 
